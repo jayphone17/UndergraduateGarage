@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1510098993 source:e:\学习文件\初学试验文件\104\main.cpp
+	<iostream>
+	<cstdio>
+	<cstring>
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1512047451 source:e:\学习文件\课堂代码\oj 1199 vote\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<algorithm>
+

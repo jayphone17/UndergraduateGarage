@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1512311531 source:e:\学习文件\课堂代码\oj 1910 斐波那契问题\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

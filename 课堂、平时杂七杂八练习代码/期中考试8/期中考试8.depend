@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1513677159 source:e:\学习文件\课堂代码\期中考试8\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+

@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1510835525 source:e:\学习文件\初学试验文件\139\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<iostream>
+	<algorithm>
+

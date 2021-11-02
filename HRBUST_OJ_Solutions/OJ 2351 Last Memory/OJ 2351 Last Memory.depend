@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1513523566 source:e:\学习文件\课堂代码\oj 2351 last memory\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<algorithm>
+

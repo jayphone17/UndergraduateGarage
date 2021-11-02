@@ -1,0 +1,41 @@
+#include<stdio.h>
+#include<string.h>
+#define M 50
+void Add(char s1[],char s2[]) //需要两个字符串参数&&无返回值
+{
+    int num1[M],num2[M];
+    memset(num1,0,sizeof(num1));
+    memset(num2,0,sizeof(num2));
+    int i,j;
+    int len1=strlen(s1);
+    int len2=strlen(s2);
+    for(i=len1-1,j=0; i>=0; i--) //num[0]保存的是低位
+        num1[j++]=s1[i]-'0';
+    for(i=len2-1,j=0; i>=0; i--)
+        num2[j++]=s2[i]-'0';
+    for(i=0; i<M; i++)
+    {
+        num1[i]+=num2[i];
+        if(num1[i]>9)
+        {
+            num1[i]-=10;
+            num1[i+1]++;
+        }
+    }
+    for(i=M-1; i>=0; i--) //找到第一个不是零的数
+    {
+        if(num1[i]>0)
+        {
+            for(i; i>=0; i--)
+                printf("%d",num1[i]);
+            break;
+        }
+    }
+}
+int main()
+{
+    char a[10003],b[10003];
+    scanf("%s",a);
+    scanf("%s",b);
+    Add(a,b);
+}

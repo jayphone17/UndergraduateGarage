@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1512572372 source:e:\学习文件\课堂代码\2044(test3)\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<iostream>
+

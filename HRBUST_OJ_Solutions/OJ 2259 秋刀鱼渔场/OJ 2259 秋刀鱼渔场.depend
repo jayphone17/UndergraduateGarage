@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1512565625 source:e:\学习文件\课堂代码\oj 2259 秋刀鱼渔场\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<algorithm>
+

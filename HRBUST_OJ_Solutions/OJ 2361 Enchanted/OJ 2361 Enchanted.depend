@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1513519550 source:e:\学习文件\课堂代码\oj 2361 enchanted\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<algorithm>
+	<string.h>
+	<cmath>
+

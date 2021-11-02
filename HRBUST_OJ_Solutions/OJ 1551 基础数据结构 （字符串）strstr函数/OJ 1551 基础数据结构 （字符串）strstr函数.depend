@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1511450323 source:e:\学习文件\课堂代码\oj 1551 基础数据结构 （字符串）strstr函数\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

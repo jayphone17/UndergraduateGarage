@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1514956557 source:e:\学习文件\课堂代码\test b\main.cpp
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	<string.h>
+

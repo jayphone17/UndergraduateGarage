@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1512558583 source:e:\学习文件\课堂代码\oj 1010\main.cpp
+	<iostream>
+	<algorithm>
+	<stdio.h>
+

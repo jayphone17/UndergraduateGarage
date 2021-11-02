@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1511764464 source:e:\学习文件\课堂代码\oj 2013\main.cpp
+	<iostream>
+	<string.h>
+	<stdio.h>
+

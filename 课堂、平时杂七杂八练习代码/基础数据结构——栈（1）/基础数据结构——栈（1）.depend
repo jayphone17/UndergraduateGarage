@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1512645801 source:e:\学习文件\课堂代码\基础数据结构——栈（1）\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<stack>
+	<string.h>
+

@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1513568432 source:e:\学习文件\课堂代码\oj 2314 coin\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<algorithm>
+

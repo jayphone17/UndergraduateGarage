@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1511765875 source:e:\学习文件\课堂代码\oj 1115 斐波那契数（迭代）\main.c
+	<stdio.h>
+	<stdlib.h>
+

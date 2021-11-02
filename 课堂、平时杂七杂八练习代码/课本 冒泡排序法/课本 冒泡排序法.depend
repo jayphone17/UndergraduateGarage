@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1510035637 source:e:\学习文件\初学试验文件\课本 冒泡排序法\main.c
+	<stdio.h>
+	<stdlib.h>
+
