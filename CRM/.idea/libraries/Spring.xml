@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Spring">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/WebRoot/WEB-INF/lib" />
+      <root url="jar://$PROJECT_DIR$/../../../apache-tomcat-9.0.31/lib/servlet-api.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/WebRoot/WEB-INF/lib" recursive="false" />
+  </library>
+</component>
