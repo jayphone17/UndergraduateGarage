@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1573815299 source:e:\学习文件（大三上学期）\算法设计与分析 实验\实验1.1\回溯——用贝尔曼法则优化最优加工顺序问题\main.cpp
+	<iostream>
+	<cstdio>
+	<cstdlib>
+	<algorithm>
+	<cstring>
+	<cmath>
+

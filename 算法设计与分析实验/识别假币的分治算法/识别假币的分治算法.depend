@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1573625081 source:e:\学习文件（大三上学期）\算法设计与分析 实验\实验1.1\识别假币的分治算法\main.cpp
+	<iostream>
+	<algorithm>
+	<cstdlib>
+	<cstdio>
+

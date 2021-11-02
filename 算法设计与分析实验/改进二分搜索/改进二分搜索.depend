@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1573618042 source:e:\学习文件（大三上学期）\算法设计与分析 实验\实验1.1\改进二分搜索\main.cpp
+	<iostream>
+	<algorithm>
+	<cstdlib>
+	<cstdio>
+
