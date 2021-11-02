@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="cn.hrbust.pojo.CrmClass" table="crm_class" >
+        <id name="classId">
+            <column name="classID" length="50" />
+            <generator class="native" />
+        </id>
+        <many-to-one name="crmLessontype" class="cn.hrbust.pojo.CrmLessontype" fetch="select">
+            <column name="lessonTypeID" length="50" />
+        </many-to-one>
+        <property name="name" type="java.lang.String">
+            <column name="name" length="50" />
+        </property>
+        <property name="beginTime" type="date">
+            <column name="beginTime" length="19" />
+        </property>
+        <property name="endTime" type="date">
+            <column name="endTime" length="19" />
+        </property>
+        <property name="totalCount">
+            <column name="totalCount" />
+        </property>
+        <property name="goCount">
+            <column name="goCount" />
+        </property>
+        <property name="leaveCount">
+            <column name="leaveCount" />
+        </property>
+    </class>
+
+  <sql-query name="QueryClass">
+    <![CDATA[
+        select * from crm_class c
+    ]]>
+    <return alias="c" class="cn.hrbust.pojo.CrmClass" />
+  </sql-query>
+
+</hibernate-mapping>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="cn.hrbust.pojo.Card" table="IdCard" select-before-update="true" dynamic-update="true">
+        <id name="id" column="id">
+            <generator class="native" >
+<!--              <param name="property">user</param>-->
+            </generator>
+<!--          约束IdCard表的主键同时作为外键参照另一个表T_USER的主键-->
+        </id>
+      <property name="info" column="info" length="100"></property>
+<!--      基于主键单向一对一配置-->
+<!--      <one-to-one name="user" constrained="true"></one-to-one>-->
+<!--      基于外键双向一对一的配置-->
+      <many-to-one name="user" column="user_id" unique="true" class="cn.hrbust.pojo.User" cascade="all"></many-to-one>
+    </class>
+</hibernate-mapping>
+

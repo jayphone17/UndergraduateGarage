@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="cn.hrbust.pojo.CrmStaff" table="crm_staff">
+        <id name="staffId">
+            <column name="staffID" length="50" />
+            <generator class="native" />
+        </id>
+        <many-to-one name="crmPost" class="cn.hrbust.pojo.CrmPost" cascade="save-update">
+            <column name="postID" length="50" />
+        </many-to-one>
+        <property name="staffCode" type="java.lang.String">
+            <column name="staffCode" length="50" />
+        </property>
+        <property name="loginName" type="java.lang.String">
+            <column name="loginName" length="100" />
+        </property>
+        <property name="loginPwd" type="java.lang.String">
+            <column name="loginPwd" length="100" />
+        </property>
+        <property name="staffName" type="java.lang.String">
+            <column name="staffName" length="100" />
+        </property>
+        <property name="gender" type="java.lang.String">
+            <column name="gender" length="20" />
+        </property>
+        <property name="birthday" type="date">
+            <column name="birthday" length="19" />
+        </property>
+        <property name="onDutyDate" type="date">
+            <column name="onDutyDate" length="19" />
+        </property>
+    </class>
+
+  <sql-query name="QueryStaffs">
+    <![CDATA[
+        select * from crm_staff s
+    ]]>
+    <return alias="s" class="cn.hrbust.pojo.CrmStaff" />
+  </sql-query>
+
+</hibernate-mapping>

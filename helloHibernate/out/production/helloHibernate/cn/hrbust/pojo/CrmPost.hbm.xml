@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="cn.hrbust.pojo.CrmPost" table="crm_post">
+        <id name="postId">
+            <column name="postID" length="50" />
+            <generator class="native" />
+        </id>
+        <many-to-one name="crmDepartment" class="cn.hrbust.pojo.CrmDepartment" fetch="select">
+            <column name="depID" length="50" />
+        </many-to-one>
+        <property name="name" type="java.lang.String">
+            <column name="name" length="100" />
+        </property>
+        <set name="crmStaffs" inverse="true">
+            <key>
+                <column name="postID" length="50" />
+            </key>
+            <one-to-many class="cn.hrbust.pojo.CrmStaff" />
+        </set>
+    </class>
+
+  <sql-query name="QueryPosts">
+    <![CDATA[
+        select * from crm_post p
+    ]]>
+    <return alias="p" class="cn.hrbust.pojo.CrmPost" />
+  </sql-query>
+</hibernate-mapping>

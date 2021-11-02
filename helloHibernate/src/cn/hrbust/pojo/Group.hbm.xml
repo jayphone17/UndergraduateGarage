@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="cn.hrbust.pojo.Group" table="T_Group" select-before-update="true" dynamic-update="true">
+        <id name="groupid" column="groupid">
+            <generator class="identity" />
+        </id>
+      <property name="name" column="name"></property>
+    </class>
+</hibernate-mapping>
+
+
+  <!--&lt;!&ndash;            n vs 1 双向的时候cascade = all&ndash;&gt;-->
+  <!--      <set name="users" cascade="save-update" table="T_USER_Group" lazy="true">-->
+  <!--        <key column="groupid"></key>-->
+  <!--      &lt;!&ndash;        多方对应表的外键，注意，这里的groupid选择外键的groupid&ndash;&gt;-->
+  <!--      &lt;!&ndash;        <one-to-many class="cn.hrbust.pojo.User"></one-to-many>&ndash;&gt;-->
+  <!--      &lt;!&ndash;        多方对应的类&ndash;&gt;-->
+  <!--        <many-to-many class="cn.hrbust.pojo.User" column="id"></many-to-many>-->
+  <!--      </set>-->
+
+
+
