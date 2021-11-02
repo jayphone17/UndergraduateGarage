@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+encoding//WebContent/toExcel.html=UTF-8
+encoding//src/hao/dao/DBConn.java=UTF-8
+encoding//src/hao/dao/StudentDao.java=UTF-8
+encoding//src/hao/dao/StudentDaoImpl.java=UTF-8
+encoding//src/hao/service/StudentService.java=UTF-8
+encoding//src/hao/service/StudentServiceImpl.java=UTF-8
+encoding//src/hao/servlet/BoundaryServlet.java=UTF-8
+encoding//src/hao/servlet/DeleteMyInfoServlet.java=UTF-8
+encoding//src/hao/servlet/DownLoadServlet.java=UTF-8
+encoding//src/hao/servlet/LoginServlet.java=UTF-8
+encoding//src/hao/servlet/QuitServlet.java=UTF-8
+encoding//src/hao/servlet/ToExcelServlet.java=UTF-8
+encoding//src/hao/servlet/UpdateServlet.java=UTF-8
+encoding//src/hao/servlet/UploadServlet.java=UTF-8
+encoding//src/hao/vo/CollegeMap.java=UTF-8
+encoding//src/hao/vo/Student.java=UTF-8

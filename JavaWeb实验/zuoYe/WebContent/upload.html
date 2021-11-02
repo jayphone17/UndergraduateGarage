@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>upload</title>
+
+	<script>
+		function authentication(){
+			var stuId=document.forms["stuInformation"]["stuId"].value;
+			var name=document.forms["stuInformation"]["name"].value;
+			var age=document.forms["stuInformation"]["age"].value;
+			var height=document.forms["stuInformation"]["height"].value;
+			var error="";
+			var stuReg= /^\d{5,}$/           //  /^\d{10}$/;
+			var ageReg=/^[0-9]*[1-9][0-9]*/;
+			var heightReg=/^[0-9]*[1-9][0-9]*/;
+			if(name.trim()==""){
+				error+="ERROR : 姓名不能为空!\n";
+			}
+			if(stuId.trim()==""){
+				error+="ERROR : 学号不能为空!\n";
+			}else if(!stuReg.test(stuId)){
+				error+="ERROR : 学号必须为十位数字!\n";
+			}
+			if(age.trim()==""){
+				error+="ERROR : 年龄不能为空!\n";
+			}else if(!ageReg.test(age)){
+				error+="ERROR : 年龄必须为正整数!\n";
+			}
+			if(height.trim()==""){
+				error+="ERROR : 身高不能为空!\n";
+			}else if(!heightReg.test(age)){
+				error+="ERROR : 身高必须为正整数!\n";
+			}
+			
+			if(error!=""){
+				alert(error);
+				return false;
+			}else{
+				return true;
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<form name="stuInformation" enctype="multipart/form-data" 
+	method="post" action="Upload" onsubmit="return authentication();">
+		学号: <input type="text" name="stuId" style="width: 200px"><br><br> 
+		姓名: <input type="text" name="name" style="width: 200px"><br><br> 
+		密码: <input type="password" name="password" style="width: 200px"><br><br> 
+		性别:&nbsp; 
+			<input type="radio" name="sex" value="male" checked>男&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="radio" name="sex" value="female">女<br><br> 
+		年龄: <input type="text" name="age" style="width: 200px"><br><br> 
+		身高: <input type="text" name="height" style="width: 200px"><br><br> 
+		学院: 
+		<select name="college" style="text-align: center;">
+			<option value="A" selected>软件学院</option>
+			<option value="B">自动化学院</option>
+			<option value="C">法学院</option>
+			<option value="D">外国语学院</option>
+			<option value="E">电气与电子工程学院</option>
+			<option value="F">计算机科学与技术学院</option>
+			<option value="G">应用科学学院</option>
+		</select><br><br>
+		
+		照片: <input type="file" name="file1"><br><br>
+		简历: <input type="file" name="file2"><br><br>
+
+		<button type="submit">提&nbsp;&nbsp;交</button>
+
+	</form>
+</body>
+</html>

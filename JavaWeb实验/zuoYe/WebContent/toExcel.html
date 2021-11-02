@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Excel</title>
+	<script>
+		function authentication(){
+			var min=document.forms["toExcel"]["min"].value;
+			var max=document.forms["toExcel"]["max"].value;
+			
+			var error="";
+			//var ageReg=/^[0-9]*[1-9][0-9]*/;
+			var ageReg = /[0-9]|[1-9][0-9]/;
+			if(min.trim()==""||max.trim()==""){
+				error+="ERROR : 年龄不能为空!\n";
+			}else if(!ageReg.test(min)||!ageReg.test(max)){
+				error+="ERROR : 年龄必须为正整数!\n";
+			}
+			if(error!=""){
+				alert(error);
+				return false;
+			}else{
+				if(parseInt(min)>parseInt(max)){
+					alert("第一个空格中的值必须大于第二个空格中的值");
+					return false;
+				}
+				return true;
+			}
+		}
+	</script>
+</head>
+<body>
+	<form name="toExcel" method="post" action="ToExcel" onsubmit="return authentication();">
+		年龄&nbsp;从&nbsp;<input type="text" name="min" style="width: 50px">&nbsp;
+		到&nbsp;<input type="text" name="max" style="width: 50px"><br><br> 
+		<button type="submit">提交</button>
+	
+	</form>
+
+</body>
+</html>
