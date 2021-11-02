@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1569667439 source:e:\学习文件（大三上学期）\算法\贪心——单源最短路径dijkstra算法\main.cpp
+	<iostream>
+	<cstdio>
+	<cstdlib>
+	<algorithm>
+	<windows.h>
+	<stack>
+

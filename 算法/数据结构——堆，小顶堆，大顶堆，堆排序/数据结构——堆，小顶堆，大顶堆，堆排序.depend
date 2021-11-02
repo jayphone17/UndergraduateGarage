@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1571652784 source:e:\学习文件（大三上学期）\算法\数据结构——堆，小顶堆，大顶堆，堆排序\main.cpp
+	<iostream>
+	<algorithm>
+	<cstdio>
+	<cstdlib>
+	<cstring>
+

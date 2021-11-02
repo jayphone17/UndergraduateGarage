@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1571050503 source:e:\学习文件（大三上学期）\算法\动态规划dp——0-1背包问题\main.cpp
+	<iostream>
+	<cstdio>
+	<cstdlib>
+	<algorithm>
+	<cstring>
+

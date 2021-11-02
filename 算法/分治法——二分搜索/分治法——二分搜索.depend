@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1569311349 source:e:\学习文件（大三上学期）\算法\分治法——二分搜索\main.cpp
+	<iostream>
+	<algorithm>
+	<cstdlib>
+	<cstdio>
+

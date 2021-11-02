@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1571462350 source:e:\学习文件（大三上学期）\算法\数据结构——并查集 union find sets\main.cpp
+	<iostream>
+	<cstdio>
+	<cstdlib>
+	<algorithm>
+

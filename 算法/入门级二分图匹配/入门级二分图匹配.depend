@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1572598894 source:e:\学习文件（大三上学期）\算法\入门级二分图匹配\main.cpp
+	<iostream>
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<algorithm>
+

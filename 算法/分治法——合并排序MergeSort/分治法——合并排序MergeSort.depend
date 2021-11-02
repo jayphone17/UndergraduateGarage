@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1569331837 source:e:\学习文件（大三上学期）\算法\分治法——合并排序mergesort\main.cpp
+	<iostream>
+	<cstdio>
+	<cstdlib>
+	<algorithm>
+

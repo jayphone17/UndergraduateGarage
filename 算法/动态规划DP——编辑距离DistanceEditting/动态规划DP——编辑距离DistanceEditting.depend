@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1571390169 source:e:\学习文件（大三上学期）\算法\动态规划dp——编辑距离distanceeditting\main.cpp
+	<iostream>
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<algorithm>
+

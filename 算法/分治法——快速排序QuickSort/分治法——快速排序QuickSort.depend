@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1569378841 source:e:\学习文件（大三上学期）\算法\分治法——快速排序quicksort\main.cpp
+	<iostream>
+	<cstdio>
+	<cstdlib>
+	<algorithm>
+

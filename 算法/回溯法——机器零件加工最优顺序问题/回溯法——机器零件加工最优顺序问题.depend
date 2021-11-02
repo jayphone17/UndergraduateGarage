@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1573369354 source:e:\学习文件（大三上学期）\算法\回溯法——机器零件加工最优顺序问题\main.cpp
+	<iostream>
+	<cstdio>
+	<cstdlib>
+	<algorithm>
+	<cstring>
+	<cmath>
+

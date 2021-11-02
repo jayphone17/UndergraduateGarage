@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1570165634 source:e:\学习文件（大三上学期）\算法\贪心——最小生成树kruskal算法\main.cpp
+	<iostream>
+	<cstdio>
+	<cstdlib>
+	<algorithm>
+

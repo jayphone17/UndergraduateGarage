@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1569465887 source:e:\学习文件（大三上学期）\算法\贪心——最优装载问题\main.cpp
+	<iostream>
+	<algorithm>
+	<cstring>
+	<cstdlib>
+
